@@ -21,13 +21,17 @@ Possible Improvements:
 ## Screenshots
 
 Welcome Screen
+
 ![Welcome Screen](screenshots/s1.png)
 
 Login Screen
+
 ![Login Screen](screenshots/s2.png)
 
 Registration Screen
+
 ![Registration Screen](screenshots/s3.png)
 
 ToDo Lists Display Screen
+
 ![ToDo Lists Display Screen](screenshots/s4.png)
