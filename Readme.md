@@ -35,3 +35,13 @@ Registration Screen
 ToDo Lists Display Screen
 
 ![ToDo Lists Display Screen](screenshots/s4.png)
+
+## Running the code
+
+```
+download and move to this directory
+set the FLASK_APP environemnt variable as run.py as follows
+set FLASK_APP=run.py
+then running the code as follows:
+python run.py
+```
