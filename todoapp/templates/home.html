@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Welcome to ToDo Web App</h1>
+    {% if current_user.is_authenticated %}
+        {% for tasklist in lists %}
+            <article class="media content-section">
+                <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + tasklist.author.image_file) }}">
+                <div class="media-body">
+                    <h2><a class="article-title" href="{{ url_for('todolist', list_id=tasklist.id) }}">{{ tasklist.title }}</a></h2>
+                    <p class="article-content">{{ tasklist.content }}</p>
+                </div>
+            </article>
+        {% endfor %}
+    {% else %}
+        <h2 style="transform: translate(45%, 0);">Login to see Your Lists</h2>        
+    {% endif %}
+{% endblock content %}
